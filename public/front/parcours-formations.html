@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta name="description" content="Fluidify">
+        <meta name='keywords' content="fluidify">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- get bootstrap icons -->
+        <!-- meta property -->
+        <meta property="og:title" content="Livelearn">
+        <meta property="og:description" content="Ontdek, ontwikkel en maak carriere">
+        <meta property="og:url" content="<?= $url ?>">
+
+    </head>
+  <body>
+
+
+  <div class="content-dashboard">
+      <div class="theme-side-menu">
+          <div class="w-100">
+              <div class="content-logo">
+                  <img src="/img/Logo.png" alt="">
+              </div>
+              <ul>
+                  <li class="element-content-side-menu active">
+                      <a href="/admin/dashboard">
+                          <img src="/img/Category.png" alt="">
+                          <span>Tableau de Bord</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="/mes-parcours">
+                          <img src="/img/Document.png" alt="">
+                          <span>Mes parcours</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="/creation-parcours-formation">
+                          <img src="/img/Document.png" alt="">
+                          <span>Ajouter parcours</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="/mes-activites">
+                          <img src="/img/Document.png" alt="">
+                          <span>Mes activités</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="/creation-activites">
+                          <img src="/img/Document.png" alt="">
+                          <span>Ajouter activités</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="">
+                          <img src="/img/carbon_crop-growth.png" alt="">
+                          <span>Mes programmes</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="">
+                          <img src="/img/group-line-1.png" alt="">
+                          <span>Mes Apprenants</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="">
+                          <img src="/img/carbon_location-company-filled.png" alt="">
+                          <span>Mes Clients</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="">
+                          <img src="/img/la_wallet-solid.png" alt="">
+                          <span>Transactions</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="">
+                          <img src="/img/Chat.png" alt="">
+                          <span>Chat</span>
+                      </a>
+                  </li>
+                  <li class="element-content-side-menu">
+                      <a href="">
+                          <img src="/img/Setting.png" alt="">
+                          <span>Paramétres</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+
+      <div class="theme-element-dashboard">
+          <nav class="navbar navbar-static-top" role="navigation">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link" data-widget="pushmenu" role="button">
+                          <i class="fa fa-bars" aria-hidden="true"></i>
+                      </a>
+                  </li>
+                  <li class="nav-item d-none d-sm-inline-block">
+                      <a href="" class="nav-link">Accueil</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item dropdown notification">
+                      <a href="#" class="dropdown-toggle" id="dropdownNotification" data-toggle="dropdown">
+                          <img src="/img/Notification.png" alt="">
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownNotification">
+                          <a class="dropdown-item" href="#">24 Notifications</a>
+                      </div>
+
+                  </li>
+                  <!-- User Account Menu -->
+                  <li class="dropdown user-menu">
+                      <!-- Menu Toggle Button -->
+                      <a href="#" class="dropdown-toggle" id="dropdownUser" data-toggle="dropdown">
+                          <div class="userProfil">
+                              <img src="/img/user.png" alt="">
+                          </div>
+                          <span class="hidden-xs">Test</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownUser">
+                          <a class="dropdown-item" href="#">Profil</a>
+                          <a class="dropdown-item" href="#">Parametre</a>
+
+                      </div>
+                  </li>
+              </ul>
+          </nav>
+
+          <div class="content-mes-parcours">
+              <h1 class="mb-4">Configurer les activités </h1>
+              <div class="card-element">
+                  <table id="table"
+
+                         data-search="true"
+                         data-filter-control="true"
+                         data-pagination="true"
+                         data-toolbar="#toolbar"
+                         class="table-parcours table">
+                      <thead>
+                      <tr>
+                          <th data-field="Parcours-de-formation" data-filter-control="input" data-sortable="true" class="title-formation">Formation : </th>
+                          <th data-field="Mes-commissions" data-filter-control="select" data-sortable="true" class="title-commission">
+                              <div class="d-flex justify-content-end">
+                                  <a href="/creation-parcours-formation" class="btn btn-parcours-formation"> <img src="/img/btnPlus.png" alt="">
+                                     
+                                      Ajouter une formation
+                                  </a>
+                              </div>
+                          </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+
+                      <tr>
+                          <td class="">Formation 1  </td>
+                          <td class="d-flex justify-content-end">
+                              <a href="" class="btn btn-modife-parcours mr-2">Modifier</a>
+                              <a href="" class="btn btn-danger">Supprimer</a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="">Formation 2  </td>
+                        <td class="d-flex justify-content-end">
+                            <a href="" class="btn btn-modife-parcours mr-2">Modifier</a>
+                            <a href="" class="btn btn-danger">Supprimer</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="">Formation 3  </td>
+                        <td class="d-flex justify-content-end">
+                            <a href="" class="btn btn-modife-parcours mr-2">Modifier</a>
+                            <a href="" class="btn btn-danger">Supprimer</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="">Formation 4  </td>
+                        <td class="d-flex justify-content-end">
+                            <a href="" class="btn btn-modife-parcours mr-2">Modifier</a>
+                            <a href="" class="btn btn-danger">Supprimer</a>
+                        </td>
+                    </tr>
+
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      
+      </div>
+  </div>
+
+
+s
+
+  <script src="js/jquery.min.js" ></script>
+  <script src="js/main.js" ></script>
+  </body>
